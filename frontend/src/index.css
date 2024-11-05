@@ -1,0 +1,343 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.custom-navbar {
+  min-height: 70px; 
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.034); 
+  background-color: #fafbff;
+  margin-top: 50px !important;
+  
+ 
+}
+.custom-listbar{
+  font-size: 14px;
+  margin-right: 5%;
+}
+
+/* App.css or custom-navbar.css */
+.custom-navbar .navbar-logo1 {
+  height: 45px; /* Adjust height as needed */
+  width: 100%;
+  margin-left: 25px;
+}
+.custom-navbar .navbar-logo2 {
+  height: 60px; /* Adjust height as needed */
+  width: auto;
+  margin-left: 15px;
+}
+.custom-navbar .navbar-logo {
+  height: 60px; /* Adjust height as needed */
+  width: auto;
+  margin-left: 25px !important;
+}
+
+@media (max-width: 768px) {
+  .custom-navbar .navbar-logo {
+    height: 45px; /* Adjust size for mobile */
+    margin-left: 40px !important;
+
+  }
+  .custom-navbar .navbar-logo1 {
+    height: 40px; /* Adjust height as needed */
+    
+    margin-left: 5px;
+  }
+  .custom-navbar .navbar-logo2 {
+    height: 50px; /* Adjust height as needed */
+   width: auto;
+    margin-left: 20px;
+  }
+  .logo-container .navbar-logo + .navbar-logo {
+    margin-left: 20px !important; /* Space between logos */
+  }
+  .logo-text{
+    display: none;
+  }
+}
+
+/* Adds spacing between logos */
+.logo-container .navbar-logo + .navbar-logo {
+  margin-left: 8px; /* Space between logos */
+}
+
+.logo-text{
+  font-size: 16px;
+  margin-left: 50px;
+}
+.login-btn{
+  background-color: #26408B;
+  padding: 8px 16px;
+  width: 80px;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+}
+.login-btn:hover{
+  background-color: white;
+  color: #26408B;
+  
+}
+
+@media (max-width: 1024px) {
+  .custom-navbar .navbar-logo {
+    height: 45px; /* Adjust size for mobile */
+    margin-left: 20px !important;
+
+  }
+  .logo-text{
+    margin-left: 100px;
+  }
+
+  .datetime{
+    font-size: 8px;
+    margin-top: -15px !important;
+  }
+  .sub-navbar .skip-link{
+    font-size: 12px;
+    margin-top: -15px;
+    margin-left: 0px;
+  }
+  .sub-navbar .font-controls button {
+    font-size: 8px;
+  }
+  .sub-navbar{
+    justify-items: center;
+    align-items: center;
+  }
+  .sub-navbar .btn-outline-primary, .sub-navbar .btn-outline-secondary{
+    font-size: 8px !important;
+    display: inline;
+    margin-top: -10px;
+  }
+}
+
+
+
+/* App.css or custom-navbar.css */
+
+.sub-navbar {
+  background-color: #1c1c1c;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #0000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1030;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  
+}
+
+.sub-navbar .font-controls button {
+  font-size: 1rem;
+  border-color: #fafbff !important;
+  color: #ffffff;
+}
+
+.sub-navbar .skip-link {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 15px;
+ 
+}
+
+.sub-navbar .skip-link:hover {
+  text-decoration: underline;
+}
+
+.sub-navbar .btn-outline-primary, .sub-navbar .btn-outline-secondary {
+  font-size: 0.9rem;
+  color: #fafbff;
+}
+
+.acustom{
+  font-size: 12px !important;
+}
+.datetime{
+  color: white;
+ margin-left: 5%;
+  margin-right: 10%;
+}
