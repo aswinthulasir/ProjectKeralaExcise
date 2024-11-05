@@ -1,30 +1,29 @@
-## Project Kerala Excise
-<br/>
 <div align="center">
-##Kerala Excise Project
-
+   
+# Kerala Excise Project 
 ## A web application to revamp the exsisting website
-<br/>
-### Built with
-[React Js]
-[Express Js]
-[Node Js]
-[Mongo DB Atlas]
-[PostgreSQL]
-[React-Bootstrap]
-[Material UI]
-[Test with Postman]
+<br/> </div>
+###   Built with
 
-## Getting started
+- [React Js]
+- [Express Js]
+- [Node Js]
+- [Mongo DB Atlas]
+- [PostgreSQL]
+- [React-Bootstrap]
+- [Material UI]
+- [Test with Postman]
+
+### Getting started
 To run frontend
-1. cd frontend
-2. npm i
-3. npm run dev
+1. ``` cd frontend ```
+2. ``` npm i ```
+3. ``` npm run dev ```
 
 To run backend
-1. cd backend
-2. npm i
-3. node app.js or nodemon app.js
+1. ```cd backend```
+2. ```npm i```
+3. ```node app.js or nodemon app.js```
 
    if nodemon is not working, install it globally [npm i nodemon -g]
 
