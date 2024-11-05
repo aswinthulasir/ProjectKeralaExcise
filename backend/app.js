@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json()); // Parse JSON bodies
 
 // Connect to MongoDB
-mongoose.connect('YOUR_MONGODB_ATLAS_CONNECTION_STRING', {
+mongoose.connect('mongodb+srv://aswinthulasi007:1234@excisedb.af1xl.mongodb.net/?retryWrites=true&w=majority&appName=ExciseDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })

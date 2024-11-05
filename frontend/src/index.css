@@ -232,6 +232,7 @@ button:focus-visible {
   .logo-text{
     display: none;
   }
+  
 }
 
 /* Adds spacing between logos */
@@ -341,3 +342,35 @@ button:focus-visible {
  margin-left: 5%;
   margin-right: 10%;
 }
+
+/* Ensures the carousel spans the full width of the screen */
+.full-width-carousel {
+  width: 100vw; /* Full viewport width */
+  margin: -80px;
+}
+
+.carousel-image {
+  height: calc(100vh - 100px); /* Adjust for navbar/subnav height */
+  object-fit: cover;
+}
+
+/* Optional: Reset body margins to avoid any gaps */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll from padding */
+}
+
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 60vh; /* Adjust height for mobile ratio */
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .carousel-image {
+    height: 50vh; /* Smaller height for extra-small mobile screens */
+  }
+}
+
