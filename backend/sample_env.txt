@@ -1,0 +1,7 @@
+"create a .env file and paste this ,then change values with your database"
+
+DB_user=your_postgres_user
+DB_host=your_postgres_host
+DB_database=your_postgres_dbname
+DB_password=your_postgres_password
+DB_port=5432
