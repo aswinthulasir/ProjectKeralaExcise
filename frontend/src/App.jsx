@@ -5,6 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import SubNavbar from './components/SubNavbar';
 import AdminDashboard from './pages/AdminDashboard';
 import DarkVariantExample from './pages/UserHome';
+import ScrollingTextBar from './components/ScrollBar';
+import 'ionicons/icons';
+import CardsOfc from './components/CardsOfc';
+
 
 function App() {
   
@@ -14,6 +18,12 @@ function App() {
     
      <NavbarComp/>
      <DarkVariantExample/>
+     <div className='div-scroll'>
+    <ScrollingTextBar />
+    </div>
+    <div>
+      <CardsOfc />
+    </div>
     </>
   )
 }

@@ -25,13 +25,20 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: flex-start; /* Align children at the start (left) */
+  align-items: flex-start;     /* Align children at the top */
   min-width: 320px;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* ensures padding and border do not affect element width */
 }
 
 h1 {
@@ -69,6 +76,7 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+  
 }
 
 
@@ -232,6 +240,9 @@ button:focus-visible {
   .logo-text{
     display: none;
   }
+  body{
+    overflow-x: hidden;
+  }
   
 }
 
@@ -242,7 +253,7 @@ button:focus-visible {
 
 .logo-text{
   font-size: 16px;
-  margin-left: 50px;
+  margin-left: 25px;
 }
 .login-btn{
   background-color: #26408B;
@@ -290,6 +301,9 @@ button:focus-visible {
     font-size: 8px !important;
     display: inline;
     margin-top: -10px;
+  }
+  body{
+    overflow-x: hidden;
   }
 }
 
@@ -345,21 +359,23 @@ button:focus-visible {
 
 /* Ensures the carousel spans the full width of the screen */
 .full-width-carousel {
-  width: 100vw; /* Full viewport width */
+  width: 105vw; /* Full viewport width */
   margin: -80px;
+  position: relative; /* Keeps buttons and other content properly positioned */
+  overflow-x: hidden;
 }
 
 .carousel-image {
   height: calc(100vh - 100px); /* Adjust for navbar/subnav height */
   object-fit: cover;
 }
-
-/* Optional: Reset body margins to avoid any gaps */
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll from padding */
+.carousal-caption h5{
+color: #fafbff;
 }
+.carousal-caption p{
+  color: #fafbff;
+  }
+
 
 @media (max-width: 768px) {
   .carousel-image {
@@ -381,29 +397,82 @@ body {
 
 .explore-btn {
   position: absolute;
-  top: 20px; /* Adjust to position above the carousel image titles */
+  margin-top: 20%;
+  top: 20px; 
   left: 50%;
-  transform: translateX(-50%); /* Center the button horizontally */
-  background-color: #007bff; /* Blue background */
-  color: #ffffff; /* White text */
-  padding: 8px 16px; /* Add padding for button size */
+  transform: translateX(-50%); 
+  background-color: #374a67; 
+  color: #ffffff; 
+  padding: 8px 16px; 
   border: none;
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Font size */
-  text-decoration: none; /* Remove underline */
-  display: inline-flex; /* Flex for icon alignment */
-  align-items: center; /* Center icon vertically */
-  gap: 6px; /* Space between text and icon */
+  border-radius: 5px; 
+  font-size: 14px; 
+  text-decoration: none; 
+  display: inline-flex; 
+  align-items: center; 
+  gap: 6px; 
   transition: background-color 0.3s ease;
-  z-index: 10; /* Ensure it appears above the carousel images */
+  z-index: 10; 
 }
 
 .explore-btn:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; 
 }
 
 /* Optional: Adjust icon size */
-.explore-btn ion-icon {
-  font-size: 1.2em; /* Icon size adjustment */
-  vertical-align: middle;
+.explore-btn .fa-arrow-right {
+  font-size: 1.2em;
+  color: white;
+}
+
+
+
+/* Scroll bar section  */
+
+
+.scrolling-container {
+  width: 100%;
+  background-color: #daddd8;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0;
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 15s linear infinite;
+  font-size: 14px;
+}
+
+.scrolling-item {
+  margin: 0 10px;
+}
+
+.bullet {
+  margin: 0 5px;
+}
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.div-scroll{
+  margin-top: 80px;
+  width: 160%;
+  margin-left: -10%;
+}
+
+.gradient-background-w {
+  background: linear-gradient(to bottom, #ffffff, #FAFBFF);
+  min-height: 100vh; /* Make it cover the full viewport height */
+  padding: 20px;
+  width: 110%;
+  margin-left: -5%;
 }

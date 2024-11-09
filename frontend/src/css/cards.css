@@ -1,0 +1,40 @@
+
+.Card-Group{
+    justify-content: space-around !important;
+    width: 87%;
+    height: auto;
+    margin-left: 6%;
+    
+    
+}
+.Card-Title{
+    font-size: 14px !important;
+    color: #1C2B78;
+}
+.Card-Designation{
+    font-size: 12px;
+    color: #008BF9;
+}
+.card-each{
+    margin: 3%;
+    border: none;
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+    
+}
+
+.card-each img{
+    border-radius: 5px;
+}
+
+.Title-card-section{
+    margin-top: 2%;
+}
+.Title-card-section h5{
+    color: #008BF9;
+    font-size: 1rem;
+   
+}
+.Title-card-section h2{
+    color: #1C2B78;
+    font-size: 1.4rem;
+}
