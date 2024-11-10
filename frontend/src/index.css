@@ -471,8 +471,49 @@ color: #fafbff;
 
 .gradient-background-w {
   background: linear-gradient(to bottom, #ffffff, #FAFBFF);
-  min-height: 100vh; /* Make it cover the full viewport height */
+  min-height: 100vh; 
   padding: 20px;
   width: 110%;
   margin-left: -5%;
+}
+
+/* Blue bg section */
+
+.gradient-background-b{
+  background-color: #374A67;
+  min-height: 100vh; 
+  padding: 20px;
+  width: 110%;
+  margin-left: -5%;
+}
+.background-cont{
+  margin-left: -5%;
+  width: 110%;;
+}
+.read-more-link {
+  color: #008BF9;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: left;
+  display: block; 
+  margin-top: 10px;
+}
+
+/* Headings and Subheadings */
+
+.Title-card-section{
+  margin-top: 2%;
+}
+.Title-card-section h5{
+  color: #66c1e4;;
+  font-size: 1rem;
+ 
+}
+.Title-card-section h2{
+  color: #1C2B78;
+  font-size: 1.4rem;
+}
+.Title-card-section-b h2{
+  color: #fafbff;
+  font-size: 1.4rem;
 }

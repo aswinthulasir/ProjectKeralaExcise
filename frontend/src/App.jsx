@@ -8,6 +8,11 @@ import DarkVariantExample from './pages/UserHome';
 import ScrollingTextBar from './components/ScrollBar';
 import 'ionicons/icons';
 import CardsOfc from './components/CardsOfc';
+import ImpOS from './pages/ImpOnlineServices';
+import GovtInitiatives from './pages/ImpOnlineServices';
+import AboutDepartment from './pages/About';
+import OnlineServices from './pages/Eservices';
+import NewsAndAnnouncements from './pages/NewsAnnounce';
 
 
 function App() {
@@ -24,6 +29,10 @@ function App() {
     <div>
       <CardsOfc />
     </div>
+    <GovtInitiatives />
+    <AboutDepartment />
+    <OnlineServices />
+    <NewsAndAnnouncements />
     </>
   )
 }

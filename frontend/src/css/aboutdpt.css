@@ -1,0 +1,62 @@
+.about-department-section {
+    background-color: #f7f9fc; /* Light background color */
+    padding: 60px 10%;
+  }
+  
+  .section-header {
+    margin-bottom: 40px;
+  }
+  
+  .section-header h5 {
+    color: #008BF9;
+    font-size: 1rem;
+  }
+  
+  .section-header h2 {
+    color: #1C2B78;
+    font-size: 1.4rem;
+  }
+  
+  .content-row {
+    background-color: #ffffff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 40px;
+  }
+
+  .overview-text {
+    text-align: left; 
+    padding-right: 20px; 
+  }
+  
+  .overview-text h3 {
+    color: #1a1a2e;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .overview-text p {
+    line-height: 1.6;
+    color: #4b4b4b;
+    text-align: left;
+  }
+  
+ 
+  
+  .read-more-link:hover {
+    text-decoration: underline;
+  }
+  
+  .image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .kerala-map {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  

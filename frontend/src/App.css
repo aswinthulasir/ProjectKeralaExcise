@@ -148,3 +148,25 @@
   font-style: italic;
 }
 
+
+::-webkit-scrollbar {
+  width: 3px; 
+  height: 8px; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #FAFBFF; 
+  border-radius: 10px; 
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #374A67; 
+  border-radius: 10px; 
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3; 
+}
